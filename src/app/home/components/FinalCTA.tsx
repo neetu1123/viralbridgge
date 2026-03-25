@@ -50,7 +50,7 @@ export default function FinalCTA() {
 
       <div className="max-w-3xl mx-auto text-center relative z-10">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-primary/30 bg-primary/10 mb-8 scroll-reveal-hidden">
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border outline-primary mb-8 ">
           <span className="w-2 h-2 rounded-full bg-vb-green pulse-dot" />
           <span className="text-xs font-display font-600 text-primary-light uppercase tracking-widest">
             Join 2,400+ brands already live

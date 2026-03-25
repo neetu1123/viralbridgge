@@ -28,22 +28,23 @@ export default function Header() {
             className="text-primary"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           />
-          <span className="font-display font-800 text-lg tracking-tight text-fg">
-            Viral<span className="gradient-text">bridgge</span>
+          <span className="font-display font-800 text-lg tracking-tight gradient-text">
+            Viralbridgge
           </span>
         </Link>
 
         {/* Nav Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-fg-muted">
-          <a href="#how-it-works" className="hover:text-fg transition-colors">How it Works</a>
-          <a href="#pricing" className="hover:text-fg transition-colors">Pricing</a>
-          <a href="#creators" className="hover:text-fg transition-colors">Creators</a>
+          <a href="#how-it-works" className="hover:text-accent transition-colors">How it Works</a>
+          <a href="#pricing" className="hover:text-accent transition-colors">Pricing</a>
+          <a href="#creators" className="hover:text-accent transition-colors">Creators</a>
         </nav>
 
         {/* CTA */}
         <a
           href="#final-cta"
-          className="btn-primary text-white text-sm font-semibold px-6 py-2.5 rounded-full font-display"
+          className="btn-primary text-white text-sm font-semibold px-6 py-2.5 rounded-full font-display shadow-lg transition-all duration-300 hover:scale-105"
+          style={{ boxShadow: '0 4px 24px 0 #4e40f133' }}
         >
           Start Campaign
         </a>

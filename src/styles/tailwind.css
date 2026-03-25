@@ -1,24 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500;600&display=swap');
 
+
 :root {
-  --color-primary: #7C3AED;
-  --color-primary-light: #9F67FF;
-  --color-accent: #F97316;
-  --color-accent-light: #FB923C;
-  --color-bg: #0D0F14;
-  --color-surface: #151821;
+  --color-primary: #4e40f1;
+  --color-primary-light: #6d5cf7;
+  --color-accent: #f22a57;
+  --color-accent-light: #ff5e8a;
+  --color-bg: #f7f8fc;
+  /* --color-surface: #151821; */
   --color-surface-2: #1C2030;
-  --color-border: rgba(124, 58, 237, 0.2);
+  --color-border: rgba(78, 64, 241, 0.2);
   --color-border-subtle: rgba(255,255,255,0.06);
   --color-fg: #F1F5F9;
   --color-fg-muted: #94A3B8;
   --color-fg-dim: #475569;
   --color-green: #22C55E;
   --color-red: #EF4444;
+  --color-button-main: #f22a57;
+  --color-button-hover: #4e40f1;
 }
 
 html {
@@ -172,12 +173,21 @@ body {
 
 /* Button hover */
 .btn-primary {
-  background: linear-gradient(135deg, #7C3AED, #9F67FF);
+  background:  var(--color-button-main);
+  color: #fff;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  box-shadow: 0 2px 8px rgba(78, 64, 241, 0.15);
 }
 .btn-primary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.4);
+  background: var(--color-button-main);
+  border: 1px solid var(--color-button-main);
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 30px rgba(242, 42, 87, 0.3), 0 0 20px rgba(78, 64, 241, 0.15);
+}
+.outline-primary {
+  border: 2px solid var(--color-button-main);
+  color: var(--color-button-main);
 }
 
 /* Card hover */

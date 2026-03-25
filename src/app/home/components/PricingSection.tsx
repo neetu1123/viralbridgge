@@ -61,7 +61,7 @@ export default function PricingSection() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="text-center mb-16 scroll-reveal-hidden">
-          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary-light mb-4 block">
+          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary mb-4 block">
             Transparent Pricing
           </span>
           <h2 className="font-display font-800 text-fg mb-4"
@@ -78,12 +78,12 @@ export default function PricingSection() {
           {highlights.map((h, i) => (
             <div
               key={i}
-              className="scroll-reveal-hidden bg-surface border border-white/6 rounded-2xl p-6 flex items-start gap-4 card-hover"
+              className="scroll-reveal-hidden bg-surface border border-primary/10 rounded-2xl p-6 flex items-start gap-4 card-hover hover:border-accent hover:shadow-lg transition-all"
               style={{ transitionDelay: `${i * 0.1}s` }}
             >
               <div className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
                 style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid rgba(124,58,237,0.25)' }}>
-                <Icon name={h.icon} size={20} className="text-primary-light" />
+                <Icon name={h.icon} size={20} className="text-primary" />
               </div>
               <div>
                 <div className="font-display font-700 text-fg mb-1">{h.title}</div>
@@ -98,7 +98,7 @@ export default function PricingSection() {
           {walletTiers.map((tier, i) => (
             <div
               key={i}
-              className={`scroll-reveal-hidden card-hover rounded-2xl p-8 relative overflow-hidden ${
+              className={`scroll-reveal-hidden card-hover rounded-2xl p-8 relative overflow-hidden hover:border-accent/60 hover:shadow-lg transition-all ${
                 tier.highlight
                   ? 'glow-violet'
                   : 'bg-surface border border-white/6'
@@ -112,7 +112,7 @@ export default function PricingSection() {
               }}
             >
               {tier.highlight && (
-                <div className="absolute top-4 right-4 bg-primary text-white text-[10px] font-display font-700 uppercase tracking-widest px-3 py-1 rounded-full">
+                <div className="absolute top-4 right-4 bg-primary text-white text-[10px] font-display font-700 uppercase tracking-widest px-3 py-1 rounded-full shadow-md">
                   Most Popular
                 </div>
               )}
@@ -132,7 +132,7 @@ export default function PricingSection() {
               <button
                 className={`w-full py-3.5 rounded-full font-display font-700 text-sm transition-all ${
                   tier.highlight
-                    ? 'btn-primary text-white' :'border border-white/15 text-fg hover:border-primary/50 hover:bg-primary/10'
+                    ? 'btn-primary text-white' :'border outline-primary text-fg hover:border-accent hover:bg-accent/10 transition-all'
                 }`}
               >
                 Recharge Wallet

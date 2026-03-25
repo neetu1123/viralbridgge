@@ -60,7 +60,7 @@ export default function HowItWorks() {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-16 scroll-reveal-hidden">
-          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary-light mb-4 block">
+          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary mb-4 block">
             Simple by Design
           </span>
           <h2 className="font-display font-800 text-fg leading-tight"
@@ -74,14 +74,14 @@ export default function HowItWorks() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {/* Step 01 — spans 2 cols */}
           <div className="md:col-span-2 scroll-reveal-hidden">
-            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group">
+            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group hover:border-accent hover:shadow-lg transition-all">
               <div className="absolute top-0 right-0 w-40 h-40 rounded-full pointer-events-none"
                 style={{ background: 'radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%)', transform: 'translate(30%, -30%)' }} />
               <div className="flex items-start justify-between mb-6">
                 <span className="font-display font-800 text-5xl text-white/5 select-none">01</span>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center"
                   style={{ background: 'rgba(124,58,237,0.15)', border: '1px solid rgba(124,58,237,0.3)' }}>
-                  <Icon name="RocketLaunchIcon" size={22} className="text-primary-light" />
+                  <Icon name="RocketLaunchIcon" size={22} className="text-primary" />
                 </div>
               </div>
               <h3 className="font-display font-800 text-2xl text-fg mb-3">Create Campaign</h3>
@@ -91,7 +91,7 @@ export default function HowItWorks() {
               {/* Mini UI preview */}
               <div className="flex flex-wrap gap-2">
                 {['₹5K Budget', 'Instagram', 'Fashion', 'Delhi NCR', '7 days'].map(tag => (
-                  <span key={tag} className="text-xs font-display font-600 text-primary-light bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-full">
+                  <span key={tag} className="text-xs font-display font-600 text-primary bg-primary/10 border border-primary/20 px-3 py-1.5 rounded-full">
                     {tag}
                   </span>
                 ))}
@@ -101,14 +101,14 @@ export default function HowItWorks() {
 
           {/* Step 02 — tall card */}
           <div className="md:row-span-2 scroll-reveal-hidden" style={{ transitionDelay: '0.15s' }}>
-            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group min-h-[360px]">
+            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group min-h-[360px] hover:border-accent hover:shadow-lg transition-all">
               <div className="absolute bottom-0 left-0 w-40 h-40 rounded-full pointer-events-none"
                 style={{ background: 'radial-gradient(circle, rgba(249,115,22,0.15) 0%, transparent 70%)', transform: 'translate(-30%, 30%)' }} />
               <div className="flex items-start justify-between mb-6">
                 <span className="font-display font-800 text-5xl text-white/5 select-none">02</span>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center"
                   style={{ background: 'rgba(249,115,22,0.15)', border: '1px solid rgba(249,115,22,0.3)' }}>
-                  <Icon name="UserGroupIcon" size={22} className="text-accent-light" />
+                  <Icon name="UserGroupIcon" size={22} className="text-accent" />
                 </div>
               </div>
               <h3 className="font-display font-800 text-2xl text-fg mb-3">Get Matched with Creators</h3>
@@ -141,7 +141,7 @@ export default function HowItWorks() {
 
           {/* Step 03 */}
           <div className="md:col-span-2 scroll-reveal-hidden" style={{ transitionDelay: '0.3s' }}>
-            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group">
+            <div className="gradient-border card-hover h-full rounded-2xl p-8 relative overflow-hidden group hover:border-accent hover:shadow-lg transition-all">
               <div className="flex items-start justify-between mb-6">
                 <span className="font-display font-800 text-5xl text-white/5 select-none">03</span>
                 <div className="w-12 h-12 rounded-xl flex items-center justify-center"

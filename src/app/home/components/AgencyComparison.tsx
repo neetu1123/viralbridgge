@@ -108,7 +108,7 @@ export default function AgencyComparison() {
                   style={{ background: 'rgba(124,58,237,0.08)' }}>
                   <div className="flex items-center justify-center gap-2">
                     <span className="text-sm">⚡</span>
-                    <span className="text-xs font-display font-700 uppercase tracking-widest text-primary-light">
+                    <span className="text-xs font-display font-700 uppercase tracking-widest text-primary">
                       Viralbridgge
                     </span>
                   </div>
@@ -151,7 +151,7 @@ export default function AgencyComparison() {
           </p>
           <a
             href="#final-cta"
-            className="btn-primary text-white font-display font-700 px-8 py-4 rounded-full text-base inline-flex items-center gap-2 group"
+            className="btn-primary text-white font-display font-700 px-8 py-4 rounded-full text-base inline-flex items-center gap-2 group shadow-lg transition-all duration-300 hover:scale-105"
           >
             Switch Today — It&apos;s Free
             <Icon name="ArrowRightIcon" size={18} className="group-hover:translate-x-1 transition-transform" />

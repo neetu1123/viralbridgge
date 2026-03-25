@@ -52,7 +52,7 @@ export default function DashboardPreview() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Heading */}
         <div className="text-center mb-16 scroll-reveal-hidden">
-          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary-light mb-4 block">
+          <span className="text-xs font-display font-700 uppercase tracking-widest text-primary mb-4 block">
             Real-Time Intelligence
           </span>
           <h2 className="font-display font-800 text-fg mb-4"
@@ -95,7 +95,7 @@ export default function DashboardPreview() {
                       onClick={() => setActiveTab(tab)}
                       className={`text-xs font-display font-600 px-4 py-2 rounded-full transition-all capitalize ${
                         activeTab === tab
-                          ? 'text-white' :'text-fg-dim hover:text-fg'
+                          ? 'text-white' :'text-fg-dim hover:text-accent transition-colors'
                       }`}
                       style={activeTab === tab ? { background: tabColors[tab] } : {}}
                     >
@@ -167,13 +167,13 @@ export default function DashboardPreview() {
               <div className="p-6">
                 <div className="flex items-center justify-between mb-5">
                   <span className="text-sm font-display font-700 text-fg">Active Campaigns</span>
-                  <span className="text-xs text-primary-light font-600">View All</span>
+                  <span className="text-xs text-primary font-600 hover:text-accent transition-colors cursor-pointer">View All</span>
                 </div>
                 <div className="space-y-4">
                   {campaignCards.map((c, i) => (
                     <div
                       key={i}
-                      className="bg-surface-2 rounded-xl p-4 card-hover cursor-default"
+                      className="bg-surface-2 rounded-xl p-4 card-hover cursor-default hover:border-accent/40 hover:shadow-lg transition-all"
                     >
                       <div className="flex items-start justify-between mb-3">
                         <div>

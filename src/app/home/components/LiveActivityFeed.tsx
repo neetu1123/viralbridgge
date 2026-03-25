@@ -56,20 +56,20 @@ export default function LiveActivityFeed() {
       <div className="relative">
         {/* Left fade */}
         <div className="absolute left-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to right, #0D0F14, transparent)' }} />
+          style={{ background: 'linear-gradient(to right, #f7f8fc, transparent)' }} />
         {/* Right fade */}
         <div className="absolute right-0 top-0 bottom-0 w-24 z-10 pointer-events-none"
-          style={{ background: 'linear-gradient(to left, #0D0F14, transparent)' }} />
+          style={{ background: 'linear-gradient(to left, #f7f8fc, transparent)' }} />
 
         <div className="flex gap-4 feed-scroll w-max px-6">
           {allItems?.map((item, i) => (
             <div
               key={i}
-              className="card-hover flex-shrink-0 w-72 bg-surface border border-white/6 rounded-2xl p-4 cursor-default"
+              className="card-hover shrink-0 w-72 bg-surface border border-primary/10 rounded-2xl p-4 cursor-default hover:border-accent hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-3">
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
+                  className="w-10 h-10 rounded-xl flex items-center justify-center text-lg shrink-0"
                   style={{ background: `${item?.color}20` }}
                 >
                   {item?.icon}

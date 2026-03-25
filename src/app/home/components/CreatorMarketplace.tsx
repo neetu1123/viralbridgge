@@ -140,7 +140,7 @@ export default function CreatorMarketplace() {
         {/* Heading */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 scroll-reveal-hidden">
           <div>
-            <span className="text-xs font-display font-700 uppercase tracking-widest text-primary-light mb-4 block">
+            <span className="text-xs font-display font-700 uppercase tracking-widest text-primary mb-4 block">
               Creator Network
             </span>
             <h2 className="font-display font-800 text-fg"
@@ -168,7 +168,7 @@ export default function CreatorMarketplace() {
                   onClick={() => setFilter(filterKey, val)}
                   className={`text-xs font-display font-600 px-3 py-1.5 rounded-full transition-all ${
                     activeFilters[filterKey] === val
-                      ? 'bg-primary text-white' :'border border-white/10 text-fg-muted hover:border-primary/40 hover:text-fg'
+                      ? 'btn-primary text-white' :'border border-primary/20 text-fg-muted hover:border-accent hover:text-accent transition-all'
                   }`}
                 >
                   {val}
@@ -253,7 +253,7 @@ export default function CreatorMarketplace() {
               </div>
 
               {/* CTA */}
-              <button className="w-full py-3 rounded-xl font-display font-700 text-sm btn-primary text-white flex items-center justify-center gap-2 group">
+              <button className="w-full py-3 rounded-xl font-display font-700 text-sm btn-primary text-white flex items-center justify-center gap-2 group shadow-lg transition-all duration-300 hover:scale-105">
                 Invite to Campaign
                 <Icon name="PaperAirplaneIcon" size={15} className="group-hover:translate-x-1 transition-transform" />
               </button>

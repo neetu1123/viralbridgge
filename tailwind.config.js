@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#7C3AED',
-        'primary-light': '#9F67FF',
-        accent: '#F97316',
-        'accent-light': '#FB923C',
+        primary: '#4e40f1',
+        'primary-light': '#6d5cf7',
+        accent: '#f22a57',
+        'accent-light': '#ff5e8a',
         bg: '#0D0F14',
         surface: '#151821',
         'surface-2': '#1C2030',
@@ -20,6 +20,9 @@ module.exports = {
         'fg-dim': '#475569',
         'vb-green': '#22C55E',
         'vb-red': '#EF4444',
+        // Custom button and hover colors
+        'button-main': '#f22a57',
+        'button-hover': '#4e40f1',
       },
       fontFamily: {
         display: ['Plus Jakarta Sans', 'sans-serif'],
